@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Вадим](https://up.htmlacademy.ru/adaptive/22/user/1625421).
-* Наставник: Тина Кузьменко.
+* Наставник: [Тина Кузьменко](https://htmlacademy.ru/profile/tina_kuzmenko).
 
 ---
 
