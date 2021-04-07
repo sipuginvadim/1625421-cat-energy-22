@@ -64,19 +64,19 @@
             <section class="selection__fieldset">
               <h2 class="vissualy-hidden">Данные кота</h2>
               <div class="selection__field">
-                <label for="cat-name" class="selection__label">Имя:*</label>
-                <input type="text" class="selection__input" id="cat-name"
+                <label for="name" class="selection__label">Имя:*</label>
+                <input type="text" class="selection__input" id="name"
                   name="cat-name" placeholder="Барсик">
               </div>
               <div class="selection__field">
                 <label for="weight" class="selection__label">Вес(кг):*</label>
                 <input type="text" class="selection__input" id="weight"
-                  name="weight" placeholder="7">
+                  name="cat-weight" placeholder="7">
               </div>
               <div class="selection__field">
                 <label for="age" class="selection__label">Возраст(лет):*</label>
-                <input type="text" class="selection__input" id="age" name="age"
-                  placeholder="7">
+                <input type="text" class="selection__input" id="age"
+                  name="cat-age" placeholder="7">
               </div>
             </section>
 
@@ -109,22 +109,21 @@
               <h2 class="selection__fieldset-title">Контактные данные
                 (владельца кота)</h2>
               <div class="selection__field">
-                <label class="selection__label"
-                  for="email-owner">E-mail:*</label>
-                <input class="selection__input" type="email" id="email-owner"
-                  placeholder="kuklachev@gmail.com">
+                <label class="selection__label" for="email">E-mail:*</label>
+                <input class="selection__input" type="email" id="email"
+                  name="email-owner" placeholder="kuklachev@gmail.com">
               </div>
               <div class="selection__field">
-                <label for="tel-owner">Телефон:*</label>
-                <input class="selection__input" type="tel" id="tel-owner"
-                  placeholder="8 (960) 900-60-90">
+                <label for="tel">Телефон:*</label>
+                <input class="selection__input" type="tel" id="tel"
+                  name="tel-owner" placeholder="8 (960) 900-60-90">
               </div>
             </section>
 
             <section class="selection__fieldset">
               <h2 class="selection__fieldset-title">Комментарий</h2>
               <textarea class="selection__comment" cols="30" rows="10"
-                placeholder="Расскажите обо всех повадках кота">
+                name="comment" placeholder="Расскажите обо всех повадках кота">
                 </textarea>
             </section>
 
