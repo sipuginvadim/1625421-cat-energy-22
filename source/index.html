@@ -12,9 +12,11 @@
       <div class="page-header__wrapper">
         <div class="page-header__top">
           <a class="page-header__link">
-            <img src="img/logo-mobile.svg" alt="Логотип Cat energy" width="34"
+            <img class="page-header__logo page-header__logo--image"
+              src="img/logo-mobile.svg" alt="Логотип Cat energy" width="34"
               height="38">
-            <img src="img/title-logo.svg" alt="Заголовок Cat energy" width="101"
+            <img class="page-header__logo page-header__logo--text"
+              src="img/title-logo.svg" alt="Заголовок Cat energy" width="101"
               height="18">
           </a>
           <button class="page-header__burger" type="button">
@@ -45,15 +47,15 @@
 
   <main class="page-main">
 
-    <section class="promo-block">
+    <section class="head-block">
       <h1 class="visually-hidden">Cat energy</h1>
       <div class="container">
-        <div class="promo-block__wrapper">
-          <h2 class="promo-block__title">Функциональное питание для котов</h2>
-          <p class="promo-block__slogan">Занялся собой? Займись котом!</p>
+        <div class="head-block__wrapper">
+          <h2 class="head-block__title">Функциональное питание для котов</h2>
+          <p class="head-block__slogan">Занялся собой? Займись котом!</p>
           <img src="img/index-can-mobile-1.png"
             alt="Банка корма Cat pro energy Курица" width="280" height="270">
-          <a class="button promo-block__button" href="form.html">Подобрать
+          <a class="head-block__button button" href="form.html">Подобрать
             программу</a>
         </div>
       </div>
@@ -64,26 +66,26 @@
       <div class="container">
         <div class="program-list__wrapper">
 
-          <article class="program-list__item">
-            <h3 class="program-list__title program-list__title--slim">Похудение
+          <div class="program-list__item program-slim">
+            <h3 class="program-slim__title program-slim__title--slim">Похудение
             </h3>
-            <p class="program-list__text">
+            <p class="program-slim__text">
               Ваш кот весит больше собаки и почти утратил способность лазить
               по деревьям? Пора на диету! Cat Energy Slim поможет вашему
               питомцу сбросить лишний вес.
             </p>
             <a href="#">Каталог slim</a>
-          </article>
+          </div>
 
-          <article class="program-list__item">
-            <h3 class="program-list__title program-list__title--pro">Набор массы
+          <div class="program-list__item program-pro">
+            <h3 class="program-pro__title program-pro__title--pro">Набор массы
             </h3>
-            <p class="program-list__text">
+            <p class="program-pro__text">
               Заработать авторитет среди дворовых котов и даже собак? Серия
               Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
             <a href="#">Каталог pro</a>
-          </article>
+          </div>
         </div>
       </div>
     </section>
@@ -130,7 +132,7 @@
     <section class="example">
       <div class="container">
         <div class="example__wrapper">
-          <h2 class="example">Живой пример</h2>
+          <h2 class="example__title">Живой пример</h2>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто
             заменив
             свой обычный корм на Cat Energy Slim. Отличный результат без
@@ -139,49 +141,43 @@
             по 16
             часов в день.</p>
           <div class="example__stats-list">
-            <div class="example__stats-item example__stats-item--weight">
-              <b class="example__stats-value">5 кг</b>
-              <small class="subtitle">снижение веса</small>
-            </div>
+            <dl class="example__stats-item">
+              <dt class="example__stats-value">5 кг</dt>
+              <dd class="example__stats-name">снижение веса</dd>
+            </dl>
 
-            <div class="example__stats-item example__stats-item--days">
-              <b class="example__stats-value">60 дней</b>
-              <small class="subtitle">затрачено времени</small>
-            </div>
+            <dl class="example__stats-item">
+              <dt class="example__stats-value">60 дней</dt>
+              <dd class="example__stats-name">затрачено времени</dd>
+            </dl>
           </div>
           <p class="example__expenses">Затраты на питание: 15000 руб.</p>
+
+          <div class="example__slider slider">
+            <div class="slider__slide slider__slide--before">
+              <img class="slider__image"
+                src="../source/img/example_before-mobile.jpg" alt="Толстый кот">
+            </div>
+            <div class="slider__slide slider__slide--after">
+              <img src="../source/img/example_after-mobile.jpg" alt="Худой кот">
+            </div>
+
+            <div class="slider__controls">
+              <button class="slider__button slider__button--before"
+                type="button">Было</button>
+
+              <div class="slider__toggle-bar">
+                <div class="slider__toggle slider__toggle--before"></div>
+                <div class="slider__toggle slider__toggle--after"></div>
+              </div>
+
+              <button class="slider__button slider__button--after"
+                type="button">Стало</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
-    <div class="example-slider">
-      <div class="container">
-        <div class="example-slider__wrapper">
-          <div class="example-slider__slide example-slider__slide--before">
-            <h3 class="vissualy-hidden">Было</h3>
-          </div>
-          <div class="example-slider__slide example-slider__slide--after">
-            <h3 class="vissualy-hidden">Стало</h3>
-          </div>
-
-          <div class="example-slider__controls">
-            <button
-              class="example-slider__button example-slider__button--before"
-              type="button">Было</button>
-            <div class="example-slider__progress">
-              <div class="example-slider__scale">
-                <div class="example-slider__bar"></div>
-                <div class="example-slider__toggle">
-                  <span class="vissualy-hidden">Бегунок прогресса</span>
-                </div>
-              </div>
-            </div>
-            <button class="example-slider__button example-slider__button--after"
-              type="button">Стало</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <footer class="footer">
       <div class="container">
