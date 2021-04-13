@@ -44,122 +44,221 @@
   </header>
 
   <main class="page-main">
-    <section class="selection">
+
+    <section class="catalog">
       <div class="container">
+        <div class="catalog__wrapper">
+          <h1 class="catalog__title">Каталог продукции</h1>
 
-        <h1 class="selection__title">Подбор программы</h1>
-        <p class="selection__text">Заполните анкету, и мы подберем
-          программу питания для вашего кота
-        </p>
+          <section class="catalog__list">
+            <h2 class="visually-hidden">Основные товары</h2>
 
-        <form class="selection__form selection-form"
-          action=" https://echo.htmlacademy.ru" method="get">
-          <h2 class="visually-hidden">Анкета</h2>
-
-          <fieldset class="selection-form__fieldset fieldset">
-            <legend class="visually-hidden">Данные кота</legend>
-            <div class="fieldset__field">
-              <label for="name" class="fieldset__label">Имя:*</label>
-              <input type="text" class="fieldset__input" id="name"
-                name="cat-name" placeholder="Барсик">
+            <div class="catalog__item product">
+              <a href="#">
+                <h3 class="product__title">Cat Energy PRO 500 г</h3>
+              </a>
+              <div class="product__image-wrapper">
+                <a href="#"><img class="product__image"
+                    src="../source/img/cat_energy_pro_500_chicken.png"
+                    alt="Банка Cat Energy PRO 500 г с курицей"></a>
+              </div>
+              <dl class="product__options">
+                <dt class="product__options-item">Масса</dt>
+                <dd class="product__options-value">500 г</dd>
+                <dt class="product__options-item">Вкус</dt>
+                <dd class="product__options-value">Курица</dd>
+                <dt class="product__options-item">Цена</dt>
+                <dd class="product__options-value">700 р.</dd>
+              </dl>
+              <a href="#" class="product__button button">Заказать</a>
             </div>
-            <div class="fieldset__field">
-              <label for="weight" class="fieldset__label">Вес(кг):*</label>
-              <input type="text" class="fieldset__input" id="weight"
-                name="cat-weight" placeholder="7">
+
+            <div class="catalog__item product">
+              <a href="#">
+                <h3 class="product__title">Cat Energy PRO 1000 г</h3>
+              </a>
+              <div class="product__image-wrapper">
+                <a href="#"><img class="product__image"
+                    src="../source/img/cat_energy_pro_1000_chicken.png"
+                    alt="Банка Cat Energy PRO 1000 г с курицей"></a>
+              </div>
+              <dl class="product__options">
+                <dt class="product__options-item">Масса</dt>
+                <dd class="product__options-value">1000 г</dd>
+                <dt class="product__options-item">Вкус</dt>
+                <dd class="product__options-value">Курица</dd>
+                <dt class="product__options-item">Цена</dt>
+                <dd class="product__options-value">1000 р.</dd>
+              </dl>
+              <a href="#" class="product__button button">Заказать</a>
             </div>
-            <div class="fieldset__field">
-              <label for="age"
-                class="selection-form__label">Возраст(лет):*</label>
-              <input type="text" class="fieldset__input" id="age" name="cat-age"
-                placeholder="7">
+
+            <div class="catalog__item product">
+              <a href="#">
+                <h3 class="product__title">Cat Energy PRO 500 г</h3>
+              </a>
+              <div class="product__image-wrapper">
+                <a href="#"><img class="product__image"
+                    src="../source/img/cat_energy_pro_500__fish.png"
+                    alt="Банка Cat Energy PRO 500 г с рыбой"></a>
+              </div>
+              <dl class="product__options">
+                <dt class="product__options-item">Масса</dt>
+                <dd class="product__options-value">500 г</dd>
+                <dt class="product__options-item">Вкус</dt>
+                <dd class="product__options-value">Рыба</dd>
+                <dt class="product__options-item">Цена</dt>
+                <dd class="product__options-value">700 р.</dd>
+              </dl>
+              <a href="#" class="product__button button">Заказать</a>
             </div>
-          </fieldset>
 
-          <fieldset class="selection-form__fieldset fieldset">
-            <legend class="visually-hidden">Выбор программы</legend>
-            <ul class="fieldset__list">
-              <li class="fieldset__item">
-                <input type="radio" class="fieldset__radio" id="program-slim"
-                  name="program">
-                <label for="program-slim"
-                  class="fieldset__label">Похудение</label>
-              </li>
-              <li class="fieldset__item">
-                <input type="radio" class="fieldset__radio" id="program-fat"
-                  name="program">
-                <label for="program-fat" class="fieldset__label">Набор
-                  массы</label>
-              </li>
-              <li class="fieldset__item">
-                <input type="radio" class="selection__radio" id="program-advice"
-                  name="program">
-                <label for="program-advice" class="selection__label">Не
-                  знаю (Нужен ваш
-                  совет)</label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="selection-form__fieldset fieldset">
-            <legend class="fieldset__title">Контактные данные
-              (владельца кота)</legend>
-            <div class="fieldset__field">
-              <label class="fieldset__label" for="email">E-mail:*</label>
-              <input class="fieldset__input" type="email" id="email"
-                name="email-owner" placeholder="kuklachev@gmail.com">
+            <div class="catalog__item product">
+              <a href="#">
+                <h3 class="product__title">Cat Energy PRO 1000 г</h3>
+              </a>
+              <div class="product__image-wrapper">
+                <a href="#"><img class="product__image"
+                    src="../source/img/cat_energy_pro_1000__fish.png"
+                    alt="Банка Cat Energy PRO 1000 г с рыбой"></a>
+              </div>
+              <dl class="product__options">
+                <dt class="product__options-item">Масса</dt>
+                <dd class="product__options-value">1000 г</dd>
+                <dt class="product__options-item">Вкус</dt>
+                <dd class="product__options-value">Рыба</dd>
+                <dt class="product__options-item">Цена</dt>
+                <dd class="product__options-value">1000 р.</dd>
+              </dl>
+              <a href="#" class="product__button button">Заказать</a>
             </div>
-            <div class="fieldset__field">
-              <label for="tel">Телефон:*</label>
-              <input class="fieldset__input" type="tel" id="tel"
-                name="tel-owner" placeholder="8 (960) 900-60-90">
+
+            <div class="catalog__item product">
+              <a href="#">
+                <h3 class="product__title">Cat Energy slim 500 г</h3>
+              </a>
+              <div class="product__image-wrapper">
+                <a href="#"><img class="product__image"
+                    src="../source/img/cat_energy_slim_500_buckwheat.png"
+                    alt="Банка Cat Energy slim 500 г с гречкой"></a>
+              </div>
+              <dl class="product__options">
+                <dt class="product__options-item">Масса</dt>
+                <dd class="product__options-value">500 г</dd>
+                <dt class="product__options-item">Вкус</dt>
+                <dd class="product__options-value">Гречка</dd>
+                <dt class="product__options-item">Цена</dt>
+                <dd class="product__options-value">400 р.</dd>
+              </dl>
+              <a href="#" class="product__button button">Заказать</a>
             </div>
-          </fieldset>
 
-          <fieldset class="selection-form__fieldset fieldset">
-            <legend class="fieldset__title">Комментарий</legend>
-            <textarea class="fieldset__comment" cols="30" rows="10"
-              name="comment" placeholder="Расскажите обо всех повадках кота">
-                </textarea>
-          </fieldset>
+            <div class="catalog__item product">
+              <a href="#">
+                <h3 class="product__title">Cat Energy slim 1000 г</h3>
+              </a>
+              <div class="product__image-wrapper">
+                <a href="#"><img class="product__image"
+                    src="../source/img/cat_energy_slim_1000_buckwheat.png"
+                    alt="Банка Cat Energy slim 1000 г с гречкой"></a>
+              </div>
+              <dl class="product__options">
+                <dt class="product__options-item">Масса</dt>
+                <dd class="product__options-value">1000 г</dd>
+                <dt class="product__options-item">Вкус</dt>
+                <dd class="product__options-value">Гречка</dd>
+                <dt class="product__options-item">Цена</dt>
+                <dd class="product__options-value">700 р.</dd>
+              </dl>
+              <a href="#" class="product__button button">Заказать</a>
+            </div>
 
-          <fieldset class="selection-form__fieldset fieldset">
-            <legend class="fieldset__title">Дополнительно</legend>
-            <ul class="fieldset__list">
-              <li class="fieldset__item">
-                <input class="fieldset__checkbox" type="checkbox" id="sweetener"
-                  name="add">
-                <label class="fieldset__label"
-                  for="sweetener">Cахарозаменитель</label>
-              </li>
-              <li class="fieldset__item">
-                <input class="fieldset__checkbox" type="checkbox"
-                  id="drink-water" name="add">
-                <label class="fieldset__label" for="drink-water">Питьевая
-                  вода</label>
-              </li>
-              <li class="fieldset__item">
-                <input class="fieldset__checkbox" type="checkbox" id="milk"
-                  name="add">
-                <label class="fieldset__label" for="milk">Молоко</label>
-              </li>
-              <li class="fieldset__item">
-                <input class="fieldset__checkbox" type="checkbox" id="vitamins"
-                  name="add">
-                <label class="fieldset__label" for="vitamins">Витамины</label>
-              </li>
-            </ul>
-          </fieldset>
+            <div class="catalog__item product">
+              <a href="#">
+                <h3 class="product__title">Cat Energy slim 500 г</h3>
+              </a>
+              <div class="product__image-wrapper">
+                <a href="#"><img class="product__image"
+                    src="../source/img/cat_energy_slim_500_rice.png"
+                    alt="Банка Cat Energy slim 1000 г с рисом"></a>
+              </div>
+              <dl class="product__options">
+                <dt class="product__options-item">Масса</dt>
+                <dd class="product__options-value">500 г</dd>
+                <dt class="product__options-item">Вкус</dt>
+                <dd class="product__options-value">Рис</dd>
+                <dt class="product__options-item">Цена</dt>
+                <dd class="product__options-value">500 р.</dd>
+              </dl>
+              <a href="#" class="product__button button">Заказать</a>
+            </div>
 
-          <button class="selection-form__button button" type="submit">Отправить
-            заявку
-          </button>
-          <p class="selection-form__note">* — Обязательные поля</p>
-
-        </form>
-
+            <div class="catalog__item more-products">
+              <h3 class="more-products__title">Показать еще 100500 товаров</h3>
+              <p class="more-products__text">На самом деле вкусов гораздо
+                больше!</p>
+              <button class="more-products__button" type="button">Показать
+                все</button>
+            </div>
+          </section>
+        </div>
       </div>
     </section>
+
+    <section class="add-catalog">
+      <div class="container">
+        <div class="add-catalog__wrapper">
+          <h2 class="add-catalog__title">Дополнительные товары</h2>
+          <div class="add-catalog__list">
+
+            <div class="add-catalog__item product">
+              <h3 class="product__title">Сахарозаменитель</h3>
+              <dl class="product__options">
+                <dt class="product__quantity">1 упаковка (100 г)</dt>
+                <dd class="product__price">200 Р.</dd>
+              </dl>
+              <a href="#" class="product__button button">Заказать</a>
+            </div>
+
+            <div class="add-catalog__item product">
+              <h3 class="product__title">Питьевая вода</h3>
+              <dl class="product__options">
+                <dt class="product__quantity">5 литров</dt>
+                <dd class="product__price">50 Р.</dd>
+              </dl>
+              <a href="#" class="product__button button">Заказать</a>
+            </div>
+
+            <div class="add-catalog__item product">
+              <h3 class="product__title">Молоко</h3>
+              <dl class="product__options">
+                <dt class="product__quantity">1 литр</dt>
+                <dd class="product__price">100 Р.</dd>
+              </dl>
+              <a href="#" class="product__button button">Заказать</a>
+            </div>
+
+            <div class="add-catalog__item product">
+              <h3 class="product__title">Витамины</h3>
+              <dl class="product__options">
+                <dt class="product__quantity">1 упаковка (30 г)</dt>
+                <dd class="product__price">300 Р.</dd>
+              </dl>
+              <a href="#" class="product__button button">Заказать</a>
+            </div>
+          </div>
+
+          <div class="gift">
+            <a class="gift__link" href="#">
+              <p class="gift__text">Закажите все и получите
+                чехол для кота в подарок!</p>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
@@ -248,7 +347,4 @@
     </div>
 
   </footer>
-
 </body>
-
-</html>
