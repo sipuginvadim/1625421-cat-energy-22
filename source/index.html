@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page-body">
+<body class="page__body">
   <header class="page-header">
     <div class="container">
       <div class="page-header__wrapper">
@@ -21,6 +22,30 @@
           </a>
           <button class="page-header__burger" type="button">
             <span class="visually-hidden">Меню</span>
+            <svg class="page-header__burger-icon page-header__burger-icon--open"
+              width="24" height="18" viewBox="0 0 24 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <line y1="1.25" x2="24" y2="1.25" stroke="black"
+                stroke-width="1.5" />
+              <line y1="9.25" x2="24" y2="9.25" stroke="black"
+                stroke-width="1.5" />
+              <line y1="17.25" x2="24" y2="17.25" stroke="black"
+                stroke-width="1.5" />
+            </svg>
+
+            <svg
+              class="page-header__burger-icon page-header__burger-icon--close"
+              width="20" height="20" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <line y1="-0.75" x2="24.7577" y2="-0.75"
+                transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)"
+                stroke="black" stroke-width="1.5" />
+              <line y1="-0.75" x2="24.7577" y2="-0.75"
+                transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)"
+                stroke="black" stroke-width="1.5" />
+            </svg>
+
+
           </button>
         </div>
 
@@ -66,25 +91,25 @@
       <div class="container">
         <div class="program-list__wrapper">
 
-          <div class="program-list__item program-slim">
-            <h3 class="program-slim__title program-slim__title--slim">Похудение
+          <div class="program-list__item program">
+            <h3 class="program__title program__title--slim">Похудение
             </h3>
-            <p class="program-slim__text">
+            <p class="program__text">
               Ваш кот весит больше собаки и почти утратил способность лазить
               по деревьям? Пора на диету! Cat Energy Slim поможет вашему
               питомцу сбросить лишний вес.
             </p>
-            <a href="#">Каталог slim</a>
+            <a class="program__link" href="#">Каталог slim</a>
           </div>
 
-          <div class="program-list__item program-pro">
-            <h3 class="program-pro__title program-pro__title--pro">Набор массы
+          <div class="program-list__item program">
+            <h3 class="program__title program__title--pro">Набор массы
             </h3>
-            <p class="program-pro__text">
+            <p class="program__text">
               Заработать авторитет среди дворовых котов и даже собак? Серия
               Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
-            <a href="#">Каталог pro</a>
+            <a class="program__link" href="#">Каталог pro</a>
           </div>
         </div>
       </div>
@@ -155,11 +180,8 @@
 
           <div class="example__slider slider">
             <div class="slider__slide slider__slide--before">
-              <img class="slider__image"
-                src="../source/img/example_before-mobile.jpg" alt="Толстый кот">
             </div>
             <div class="slider__slide slider__slide--after">
-              <img src="../source/img/example_after-mobile.jpg" alt="Худой кот">
             </div>
 
             <div class="slider__controls">
@@ -184,12 +206,10 @@
 
         <section class="cooperation">
           <div class="cooperation__wrapper">
-            <h2 class="cooperation__text">Приглашаем к сотрудничеству
+            <h2 class="cooperation__title">Приглашаем к сотрудничеству
               дилеров!</h2>
-            <div class="cooperation__adress">
-              <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8</p>
-              <p class="cooperation__city">Санкт-Петербург</p>
-            </div>
+            <p class="cooperation__adress">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="cooperation__adress">Санкт-Петербург</p>
           </div>
         </section>
 
