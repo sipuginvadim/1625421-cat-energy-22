@@ -1,12 +1,12 @@
 .head-block {
-  background: url("../../img/Rectangle_green.png") no-repeat, url("../../img/head-block_background.jpg") no-repeat;
+  background: linear-gradient(fade(@basic-green, 85%), fade(@basic-green, 85%)), url("../../img/head-block_background.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 264px;
   color: @white;
-  font-family: @Oswald;
   padding-top: 27px;
 }
 
 .head-block__title {
-  font-family: @Oswald;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -14,10 +14,14 @@
 }
 
 .head-block__slogan {
-  font-family: @Oswald;
-  font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   margin-bottom: 29px;
+}
+
+.head-block__button {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  display: inline-block;
 }
