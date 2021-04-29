@@ -1,28 +1,55 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
-
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page__body">
   <header class="page-header">
     <div class="container">
       <div class="page-header__wrapper">
         <div class="page-header__top">
           <a class="page-header__link">
-            <img src="img/logo-mobile.svg" alt="Логотип Cat energy" width="34"
+            <img class="page-header__logo page-header__logo--image"
+              src="img/logo-mobile.svg" alt="Логотип Cat energy" width="34"
               height="38">
-            <img src="img/title-logo.svg" alt="Заголовок Cat energy" width="101"
+            <img class="page-header__logo page-header__logo--text"
+              src="img/title-logo.svg" alt="Заголовок Cat energy" width="101"
               height="18">
           </a>
-          <button class="page-header__burger" type="button">
+          <button class="page-header__burger page-header__burger--active"
+            type="button">
             <span class="visually-hidden">Меню</span>
+            <svg class="page-header__burger-icon page-header__burger-icon--open"
+              width="24" height="18" viewBox="0 0 24 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <line y1="1.25" x2="24" y2="1.25" stroke="black"
+                stroke-width="1.5" />
+              <line y1="9.25" x2="24" y2="9.25" stroke="black"
+                stroke-width="1.5" />
+              <line y1="17.25" x2="24" y2="17.25" stroke="black"
+                stroke-width="1.5" />
+            </svg>
+
+            <svg
+              class="page-header__burger-icon page-header__burger-icon--close"
+              width="20" height="20" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <line y1="-0.75" x2="24.7577" y2="-0.75"
+                transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)"
+                stroke="black" stroke-width="1.5" />
+              <line y1="-0.75" x2="24.7577" y2="-0.75"
+                transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)"
+                stroke="black" stroke-width="1.5" />
+            </svg>
+
+
           </button>
         </div>
+
 
         <div class="page-header__nav">
           <nav class="main-nav">
@@ -57,7 +84,8 @@
           action=" https://echo.htmlacademy.ru" method="get">
           <h2 class="visually-hidden">Анкета</h2>
 
-          <fieldset class="selection-form__fieldset fieldset">
+          <fieldset
+            class="selection-form__fieldset fieldset fieldset--data-cat">
             <legend class="visually-hidden">Данные кота</legend>
             <div class="fieldset__field">
               <label for="name" class="fieldset__label">Имя:*</label>
@@ -70,39 +98,42 @@
                 name="cat-weight" placeholder="7">
             </div>
             <div class="fieldset__field">
-              <label for="age"
-                class="selection-form__label">Возраст(лет):*</label>
+              <label for="age" class="fieldset__label">Возраст(лет):*</label>
               <input type="text" class="fieldset__input" id="age" name="cat-age"
                 placeholder="7">
             </div>
           </fieldset>
 
-          <fieldset class="selection-form__fieldset fieldset">
+          <fieldset
+            class="selection-form__fieldset fieldset fieldset--selection-program">
             <legend class="visually-hidden">Выбор программы</legend>
             <ul class="fieldset__list">
               <li class="fieldset__item">
                 <input type="radio" class="fieldset__radio" id="program-slim"
-                  name="program">
+                  name="program" checked>
                 <label for="program-slim"
-                  class="fieldset__label">Похудение</label>
+                  class="fieldset__label fieldset__label--radio">Похудение</label>
               </li>
               <li class="fieldset__item">
                 <input type="radio" class="fieldset__radio" id="program-fat"
                   name="program">
-                <label for="program-fat" class="fieldset__label">Набор
+                <label for="program-fat"
+                  class="fieldset__label fieldset__label--radio">Набор
                   массы</label>
               </li>
               <li class="fieldset__item">
-                <input type="radio" class="selection__radio" id="program-advice"
+                <input type="radio" class="fieldset__radio" id="program-advice"
                   name="program">
-                <label for="program-advice" class="selection__label">Не
+                <label for="program-advice"
+                  class="fieldset__label fieldset__label--radio">Не
                   знаю (Нужен ваш
                   совет)</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="selection-form__fieldset fieldset">
+          <fieldset
+            class="selection-form__fieldset fieldset fieldset--data-owner">
             <legend class="fieldset__title">Контактные данные
               (владельца кота)</legend>
             <div class="fieldset__field">
@@ -111,25 +142,26 @@
                 name="email-owner" placeholder="kuklachev@gmail.com">
             </div>
             <div class="fieldset__field">
-              <label for="tel">Телефон:*</label>
+              <label class="fieldset__label" for="tel">Телефон:*</label>
               <input class="fieldset__input" type="tel" id="tel"
                 name="tel-owner" placeholder="8 (960) 900-60-90">
             </div>
           </fieldset>
 
-          <fieldset class="selection-form__fieldset fieldset">
+          <fieldset class="selection-form__fieldset fieldset fieldset--comment">
             <legend class="fieldset__title">Комментарий</legend>
-            <textarea class="fieldset__comment" cols="30" rows="10"
-              name="comment" placeholder="Расскажите обо всех повадках кота">
-                </textarea>
+            <textarea class="fieldset__input fieldset__input--comment"
+              name="comment"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
-          <fieldset class="selection-form__fieldset fieldset">
+          <fieldset
+            class="selection-form__fieldset fieldset fieldset--additionally">
             <legend class="fieldset__title">Дополнительно</legend>
             <ul class="fieldset__list">
               <li class="fieldset__item">
                 <input class="fieldset__checkbox" type="checkbox" id="sweetener"
-                  name="add">
+                  name="add" checked>
                 <label class="fieldset__label"
                   for="sweetener">Cахарозаменитель</label>
               </li>
@@ -168,12 +200,10 @@
 
       <section class="cooperation">
         <div class="cooperation__wrapper">
-          <h2 class="cooperation__text">Приглашаем к сотрудничеству
+          <h2 class="cooperation__title">Приглашаем к сотрудничеству
             дилеров!</h2>
-          <div class="cooperation__adress">
-            <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8</p>
-            <p class="cooperation__city">Санкт-Петербург</p>
-          </div>
+          <p class="cooperation__adress">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="cooperation__adress">Санкт-Петербург</p>
         </div>
       </section>
 
