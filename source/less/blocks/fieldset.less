@@ -1,0 +1,58 @@
+.fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+
+.fieldset__field {
+  margin-bottom: 14px;
+
+  &--:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.fieldset__label {
+  text-transform: uppercase;
+  padding-right: 12px;
+
+  &--radio {
+    color: @dark-grey-2;
+  }
+}
+
+.fieldset__input {
+  border: 1px solid @border-input-grey;
+  height: 45px;
+  text-transform: uppercase;
+  font-family: @oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: @dark-grey;
+
+  &--comment {
+    height: 150px;
+  }
+}
+
+.fieldset__list {
+  .ul-style-reset ();
+}
+
+.fieldset__item {
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.fieldset__title {
+  font-size: 24px;
+  line-height: 26px;
+  color: @black;
+}
