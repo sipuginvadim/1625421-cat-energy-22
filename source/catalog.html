@@ -1,36 +1,40 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page__body">
   <header class="page-header">
     <div class="container">
       <div class="page-header__wrapper">
         <div class="page-header__top">
-          <a class="page-header__link">
-            <img src="img/logo-mobile.svg" alt="Логотип Cat energy" width="34"
+          <a class="page-header__link" href="index.html">
+            <img class="page-header__logo page-header__logo--image"
+              src="img/logo-mobile.svg" alt="Логотип Cat energy" width="34"
               height="38">
-            <img src="img/title-logo.svg" alt="Заголовок Cat energy" width="101"
+            <img class="page-header__logo page-header__logo--text"
+              src="img/title-logo.svg" alt="Заголовок Cat energy" width="101"
               height="18">
           </a>
-          <button class="page-header__burger" type="button">
+          <button class="page-header__burger page-header__burger--close"
+            type="button">
             <span class="visually-hidden">Меню</span>
           </button>
         </div>
 
+
         <div class="page-header__nav">
           <nav class="main-nav">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
+              <li class="main-nav__item">
                 <a href="index.html" class="main-nav__link">Главная</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--active">
                 <a href="catalog.html" class="main-nav__link">Каталог
                   продукции</a>
               </li>
@@ -44,31 +48,28 @@
     </div>
   </header>
 
-  <main class="page-main">
+  <main class="page-catalog">
 
     <section class="catalog">
       <div class="container">
-
         <h1 class="catalog__title">Каталог продукции</h1>
-
         <div class="catalog__list">
-
           <div class="catalog__item product">
             <a href="#">
               <h3 class="product__title">Cat Energy PRO 500 г</h3>
             </a>
             <div class="product__image-wrapper">
-              <a href="#"><img class="product__image"
-                  src="../source/img/cat_energy_pro_500_chicken.png"
+              <a href="#"><img class="product__image" width="68" height="86"
+                  src="../img/products_image/cat_energy_pro_500_chicken.png"
                   alt="Банка Cat Energy PRO 500 г с курицей"></a>
             </div>
-            <dl class="product__options">
+            <dl class="product__options-list">
               <dt class="product__options-item">Масса</dt>
-              <dd class="product__options-value">500 г</dd>
+              <dd class="product__options-item">500 г</dd>
               <dt class="product__options-item">Вкус</dt>
-              <dd class="product__options-value">Курица</dd>
+              <dd class="product__options-item">Курица</dd>
               <dt class="product__options-item">Цена</dt>
-              <dd class="product__options-value">700 р.</dd>
+              <dd class="product__options-item">700 р.</dd>
             </dl>
             <a href="#" class="product__button button">Заказать</a>
           </div>
@@ -78,17 +79,17 @@
               <h3 class="product__title">Cat Energy PRO 1000 г</h3>
             </a>
             <div class="product__image-wrapper">
-              <a href="#"><img class="product__image"
-                  src="../source/img/cat_energy_pro_1000_chicken.png"
+              <a href="#"><img class="product__image" width="84" height="100"
+                  src="../img/products_image/cat_energy_pro_1000_chicken.png"
                   alt="Банка Cat Energy PRO 1000 г с курицей"></a>
             </div>
-            <dl class="product__options">
+            <dl class="product__options-list">
               <dt class="product__options-item">Масса</dt>
-              <dd class="product__options-value">1000 г</dd>
+              <dd class="product__options-item">1000 г</dd>
               <dt class="product__options-item">Вкус</dt>
-              <dd class="product__options-value">Курица</dd>
+              <dd class="product__options-item">Курица</dd>
               <dt class="product__options-item">Цена</dt>
-              <dd class="product__options-value">1000 р.</dd>
+              <dd class="product__options-item">1000 р.</dd>
             </dl>
             <a href="#" class="product__button button">Заказать</a>
           </div>
@@ -98,17 +99,17 @@
               <h3 class="product__title">Cat Energy PRO 500 г</h3>
             </a>
             <div class="product__image-wrapper">
-              <a href="#"><img class="product__image"
-                  src="../source/img/cat_energy_pro_500__fish.png"
+              <a href="#"><img class="product__image" width="68" height="78"
+                  src="../img/products_image/cat_energy_pro_500__fish.png"
                   alt="Банка Cat Energy PRO 500 г с рыбой"></a>
             </div>
-            <dl class="product__options">
+            <dl class="product__options-list">
               <dt class="product__options-item">Масса</dt>
-              <dd class="product__options-value">500 г</dd>
+              <dd class="product__options-item">500 г</dd>
               <dt class="product__options-item">Вкус</dt>
-              <dd class="product__options-value">Рыба</dd>
+              <dd class="product__options-item">Рыба</dd>
               <dt class="product__options-item">Цена</dt>
-              <dd class="product__options-value">700 р.</dd>
+              <dd class="product__options-item">700 р.</dd>
             </dl>
             <a href="#" class="product__button button">Заказать</a>
           </div>
@@ -118,17 +119,17 @@
               <h3 class="product__title">Cat Energy PRO 1000 г</h3>
             </a>
             <div class="product__image-wrapper">
-              <a href="#"><img class="product__image"
-                  src="../source/img/cat_energy_pro_1000__fish.png"
+              <a href="#"><img class="product__image" width="84" height="100"
+                  src="../img/products_image/cat_energy_pro_1000__fish.png"
                   alt="Банка Cat Energy PRO 1000 г с рыбой"></a>
             </div>
-            <dl class="product__options">
+            <dl class="product__options-list">
               <dt class="product__options-item">Масса</dt>
-              <dd class="product__options-value">1000 г</dd>
+              <dd class="product__options-item">1000 г</dd>
               <dt class="product__options-item">Вкус</dt>
-              <dd class="product__options-value">Рыба</dd>
+              <dd class="product__options-item">Рыба</dd>
               <dt class="product__options-item">Цена</dt>
-              <dd class="product__options-value">1000 р.</dd>
+              <dd class="product__options-item">1000 р.</dd>
             </dl>
             <a href="#" class="product__button button">Заказать</a>
           </div>
@@ -138,17 +139,17 @@
               <h3 class="product__title">Cat Energy slim 500 г</h3>
             </a>
             <div class="product__image-wrapper">
-              <a href="#"><img class="product__image"
-                  src="../source/img/cat_energy_slim_500_buckwheat.png"
+              <a href="#"><img class="product__image" width="68" height="78"
+                  src="../img/products_image/cat_energy_slim_500_buckwheat.png"
                   alt="Банка Cat Energy slim 500 г с гречкой"></a>
             </div>
-            <dl class="product__options">
+            <dl class="product__options-list">
               <dt class="product__options-item">Масса</dt>
-              <dd class="product__options-value">500 г</dd>
+              <dd class="product__options-item">500 г</dd>
               <dt class="product__options-item">Вкус</dt>
-              <dd class="product__options-value">Гречка</dd>
+              <dd class="product__options-item">Гречка</dd>
               <dt class="product__options-item">Цена</dt>
-              <dd class="product__options-value">400 р.</dd>
+              <dd class="product__options-item">400 р.</dd>
             </dl>
             <a href="#" class="product__button button">Заказать</a>
           </div>
@@ -158,17 +159,17 @@
               <h3 class="product__title">Cat Energy slim 1000 г</h3>
             </a>
             <div class="product__image-wrapper">
-              <a href="#"><img class="product__image"
-                  src="../source/img/cat_energy_slim_1000_buckwheat.png"
+              <a href="#"><img class="product__image" width="84" height="100"
+                  src="../img/products_image/cat_energy_slim_1000_buckwheat.png"
                   alt="Банка Cat Energy slim 1000 г с гречкой"></a>
             </div>
-            <dl class="product__options">
+            <dl class="product__options-list">
               <dt class="product__options-item">Масса</dt>
-              <dd class="product__options-value">1000 г</dd>
+              <dd class="product__options-item">1000 г</dd>
               <dt class="product__options-item">Вкус</dt>
-              <dd class="product__options-value">Гречка</dd>
+              <dd class="product__options-item">Гречка</dd>
               <dt class="product__options-item">Цена</dt>
-              <dd class="product__options-value">700 р.</dd>
+              <dd class="product__options-item">700 р.</dd>
             </dl>
             <a href="#" class="product__button button">Заказать</a>
           </div>
@@ -178,17 +179,17 @@
               <h3 class="product__title">Cat Energy slim 500 г</h3>
             </a>
             <div class="product__image-wrapper">
-              <a href="#"><img class="product__image"
-                  src="../source/img/cat_energy_slim_500_rice.png"
+              <a href="#"><img class="product__image" width="72" height="84"
+                  src="../img/products_image/cat_energy_slim_500_rice.png"
                   alt="Банка Cat Energy slim 1000 г с рисом"></a>
             </div>
-            <dl class="product__options">
+            <dl class="product__options-list">
               <dt class="product__options-item">Масса</dt>
-              <dd class="product__options-value">500 г</dd>
+              <dd class="product__options-item">500 г</dd>
               <dt class="product__options-item">Вкус</dt>
-              <dd class="product__options-value">Рис</dd>
+              <dd class="product__options-item">Рис</dd>
               <dt class="product__options-item">Цена</dt>
-              <dd class="product__options-value">500 р.</dd>
+              <dd class="product__options-item">500 р.</dd>
             </dl>
             <a href="#" class="product__button button">Заказать</a>
           </div>
@@ -214,8 +215,8 @@
           <div class="additional-catalog__item product">
             <h3 class="product__title">Сахарозаменитель</h3>
             <dl class="product__options">
-              <dt class="product__quantity">1 упаковка (100 г)</dt>
-              <dd class="product__price">200 Р.</dd>
+              <dt class="product__options-item">1 упаковка (100 г)</dt>
+              <dd class="product__options-item">200 Р.</dd>
             </dl>
             <a href="#" class="product__button button">Заказать</a>
           </div>
@@ -223,8 +224,8 @@
           <div class="additional-catalog__item product">
             <h3 class="product__title">Питьевая вода</h3>
             <dl class="product__options">
-              <dt class="product__quantity">5 литров</dt>
-              <dd class="product__price">50 Р.</dd>
+              <dt class="product__options-item">5 литров</dt>
+              <dd class="product__options-item">50 Р.</dd>
             </dl>
             <a href="#" class="product__button button">Заказать</a>
           </div>
@@ -232,8 +233,8 @@
           <div class="additional-catalog__item product">
             <h3 class="product__title">Молоко</h3>
             <dl class="product__options">
-              <dt class="product__quantity">1 литр</dt>
-              <dd class="product__price">100 Р.</dd>
+              <dt class="product__options-item">1 литр</dt>
+              <dd class="product__options-item">100 Р.</dd>
             </dl>
             <a href="#" class="product__button button">Заказать</a>
           </div>
@@ -241,37 +242,34 @@
           <div class="additional-catalog__item product">
             <h3 class="product__title">Витамины</h3>
             <dl class="product__options">
-              <dt class="product__quantity">1 упаковка (30 г)</dt>
-              <dd class="product__price">300 Р.</dd>
+              <dt class="product__options-item">1 упаковка (30 г)</dt>
+              <dd class="product__options-item">300 Р.</dd>
             </dl>
             <a href="#" class="product__button button">Заказать</a>
           </div>
 
         </div>
       </div>
+    </section>
 
-      <a class="gift" href="#">
-        <p class="gift__text">Закажите все и получите
-          чехол для кота в подарок!</p>
-      </a>
+    <a class="gift" href="#">
+      <p class="gift__text">Закажите все и получите
+        чехол для кота в подарок!</p>
+    </a>
 
+    <section class="cooperation">
+      <div class="cooperation__wrapper">
+        <h2 class="cooperation__title">Приглашаем к сотрудничеству
+          дилеров!</h2>
+        <p class="cooperation__adress">ул. Большая Конюшенная, д. 19/8</p>
+        <p class="cooperation__adress">Санкт-Петербург</p>
+      </div>
     </section>
 
   </main>
 
   <footer class="footer">
     <div class="container">
-
-      <section class="cooperation">
-        <div class="cooperation__wrapper">
-          <h2 class="cooperation__text">Приглашаем к сотрудничеству
-            дилеров!</h2>
-          <div class="cooperation__adress">
-            <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8</p>
-            <p class="cooperation__city">Санкт-Петербург</p>
-          </div>
-        </div>
-      </section>
 
       <div class="footer__map">
         <iframe
