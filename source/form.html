@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,7 +13,7 @@
     <div class="container">
       <div class="page-header__wrapper">
         <div class="page-header__top">
-          <a class="page-header__link">
+          <a class="page-header__link" href="index.html">
             <img class="page-header__logo page-header__logo--image"
               src="img/logo-mobile.svg" alt="Логотип Cat energy" width="34"
               height="38">
@@ -20,33 +21,9 @@
               src="img/title-logo.svg" alt="Заголовок Cat energy" width="101"
               height="18">
           </a>
-          <button class="page-header__burger page-header__burger--active"
+          <button class="page-header__burger page-header__burger--close"
             type="button">
             <span class="visually-hidden">Меню</span>
-            <svg class="page-header__burger-icon page-header__burger-icon--open"
-              width="24" height="18" viewBox="0 0 24 18" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <line y1="1.25" x2="24" y2="1.25" stroke="black"
-                stroke-width="1.5" />
-              <line y1="9.25" x2="24" y2="9.25" stroke="black"
-                stroke-width="1.5" />
-              <line y1="17.25" x2="24" y2="17.25" stroke="black"
-                stroke-width="1.5" />
-            </svg>
-
-            <svg
-              class="page-header__burger-icon page-header__burger-icon--close"
-              width="20" height="20" viewBox="0 0 20 20" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <line y1="-0.75" x2="24.7577" y2="-0.75"
-                transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)"
-                stroke="black" stroke-width="1.5" />
-              <line y1="-0.75" x2="24.7577" y2="-0.75"
-                transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)"
-                stroke="black" stroke-width="1.5" />
-            </svg>
-
-
           </button>
         </div>
 
@@ -54,14 +31,14 @@
         <div class="page-header__nav">
           <nav class="main-nav">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
+              <li class="main-nav__item">
                 <a href="index.html" class="main-nav__link">Главная</a>
               </li>
               <li class="main-nav__item">
                 <a href="catalog.html" class="main-nav__link">Каталог
                   продукции</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--active">
                 <a href="form.html" class="main-nav__link">Подбор программы</a>
               </li>
             </ul>
@@ -71,7 +48,7 @@
     </div>
   </header>
 
-  <main class="page-main">
+  <main class="page-form">
     <section class="selection">
       <div class="container">
 
@@ -190,23 +167,21 @@
           <p class="selection-form__note">* — Обязательные поля</p>
 
         </form>
+      </div>
+    </section>
 
+    <section class="cooperation">
+      <div class="cooperation__wrapper">
+        <h2 class="cooperation__title">Приглашаем к сотрудничеству
+          дилеров!</h2>
+        <p class="cooperation__adress">ул. Большая Конюшенная, д. 19/8</p>
+        <p class="cooperation__adress">Санкт-Петербург</p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-
-      <section class="cooperation">
-        <div class="cooperation__wrapper">
-          <h2 class="cooperation__title">Приглашаем к сотрудничеству
-            дилеров!</h2>
-          <p class="cooperation__adress">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="cooperation__adress">Санкт-Петербург</p>
-        </div>
-      </section>
-
       <div class="footer__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617630732757!5m2!1sru!2sru"
