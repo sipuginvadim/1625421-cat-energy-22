@@ -1,10 +1,24 @@
 .main-nav__list {
   .ul-style-reset ();
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 440px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 478px;
+    height: 40px;
+  }
 }
 
 .main-nav__item {
   padding-top: 22px;
   padding-bottom: 24px;
+  text-align: center;
 }
 
 .main-nav__link {

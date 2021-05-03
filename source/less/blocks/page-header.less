@@ -14,4 +14,63 @@
   &--close {
     background: url("../img/burger-close.svg") no-repeat;
   }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__top {
+  display: flex;
+  justify-content: space-between;
+  min-height: 66px;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    min-width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 202px;
+    height: 59px;
+  }
+}
+
+.page-header__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+.page-header__logo,
+.page-header__title-logo {
+
+  display: block;
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+
+    &--tablet {
+      display: block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+
+    &--desktop {
+      display: block;
+    }
+  }
 }

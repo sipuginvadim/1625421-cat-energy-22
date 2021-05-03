@@ -1,0 +1,27 @@
+.program-list {
+  padding-top: 22px;
+}
+
+.program-list__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.program-list__item {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 50%;
+    margin-right: 80px;
+    margin-bottom: 0;
+  }
+}

@@ -14,13 +14,38 @@
 
 .description__list {
   .ul-style-reset ();
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 153px;
+    column-gap: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .description__item {
   margin-bottom: 26px;
+  padding-left: 80px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 50%;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 25%;
+    margin: 0;
   }
 }
 
