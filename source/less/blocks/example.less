@@ -4,6 +4,21 @@
   background-color: @example-background-grey;
 }
 
+.example__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: wrap;
+    height: 700px;
+    align-items: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 50%;
+  }
+}
+
 .example__title {
   font-weight: 400;
   font-size: 36px;
@@ -11,23 +26,68 @@
   color: @black;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 146px;
+  }
 }
 
 .example__text {
   font-family: @arial;
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.example__stats {
+  margin-bottom: 42px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .example__stats-list {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 .example__stats-item {
-  width: 124px;
+  width: 50%;
+  margin-right: 31px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 162px;
+    margin-right: 42px;
+  }
+
   border: 1px solid @light-grey;
   border-radius: 5px;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 17px;
 }
 
 .example__stats-value {
@@ -40,6 +100,12 @@
   font-size: 12px;
   line-height: 12px;
   color: @black;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__expenses {
@@ -47,4 +113,20 @@
   line-height: 20px;
   color: @black;
   text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 330px;
+  }
 }

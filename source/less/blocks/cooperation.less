@@ -2,6 +2,13 @@
   padding-top: 28px;
   padding-bottom: 28px;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 62px;
+    padding-bottom: 58px;
+    padding-left: 41px;
+    padding-right: 41px;
+  }
+
   &--background-grey {
     background-color: @background-grey;
   }
@@ -14,6 +21,12 @@
   color: @black;
   text-transform: uppercase;
   margin: 0;
+  max-width: 50%;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .cooperation__adress {
@@ -22,4 +35,17 @@
   line-height: 20px;
   color: @black;
   margin: 0;
+  max-width: 50%;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+}
+
+.cooperation__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
