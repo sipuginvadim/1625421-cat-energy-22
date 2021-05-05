@@ -1,6 +1,11 @@
 .description {
   padding-top: 27px;
-  padding-bottom: 46px;
+  padding-bottom: 42px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 47px;
+  }
 }
 
 .description__title {
@@ -14,6 +19,7 @@
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 32px;
   }
 }
 
@@ -36,7 +42,8 @@
 }
 
 .description__item {
-  margin-bottom: 26px;
+  margin-bottom: 20px;
+  padding-left: 80px;
 
   &:last-child {
     margin-bottom: 0;
@@ -45,10 +52,14 @@
   @media (min-width: @tablet-width) {
     max-width: 50%;
     margin: 0;
+    padding-left: 0;
+    padding-top: 151px;
+    padding-bottom: 57px;
+    padding-right: 29px;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 25%;
+    width: 25%;
     margin: 0;
   }
 }

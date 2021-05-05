@@ -3,10 +3,8 @@
 }
 
 .program-list__wrapper {
-  display: flex;
-  flex-direction: column;
-
   @media (min-width: @desktop-width) {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -17,10 +15,10 @@
 
   &:last-child {
     margin: 0;
+  }
 
-    @media (min-width: @desktop-width) {
-      margin: 0;
-    }
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {

@@ -4,6 +4,20 @@
   padding-bottom: 22px;
   padding-left: 22px;
   padding-right: 33px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 77px;
+    padding-bottom: 53px;
+    padding-left: 53px;
+  }
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    padding-right: 279px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 61px;
+  }
 }
 
 .program__title {
@@ -21,16 +35,26 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 214px;
+  }
 }
+
 
 .program__text {
   font-family: @arial;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 38px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 23px;
   }
 }
 
